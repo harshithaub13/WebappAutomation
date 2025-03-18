@@ -39,6 +39,7 @@ public class FlyingTigerStorePageTest extends TestBase{
 
 	    @Test(dataProvider = "FTCStoreData", priority = 1)
     	public void verifyFTCStoreLogoIsDisplayed(String storeId, String storeName) {
+
     		log.info("Starting FTC Test");
     		try {
     			log.debug("Waiting for the store page to load...");
@@ -50,7 +51,8 @@ public class FlyingTigerStorePageTest extends TestBase{
     			log.info("FTC Logo validation test executed successfully");
     		} catch (Exception e) { 	   
     			log.error("Error occurred during FTC Logo validation ", e);
-    		}                 	
+    		}
+
 	    }
 
 	    @Test(dataProvider = "FTCStoreData", priority = 2, dependsOnMethods = "verifyFTCStoreLogoIsDisplayed")

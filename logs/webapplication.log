@@ -19874,3 +19874,27 @@ Session ID: e708fe388077f4feeca8d70d8adb97b5
 2025-03-17 18:20:49 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering CVV: 454
 2025-03-17 18:20:50 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Clicking pay button
 2025-03-17 18:20:54 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Resetting browser state
+2025-03-18 13:46:56 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Starting FTC Test
+2025-03-18 13:47:10 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - FTC Logo validation test executed successfully
+2025-03-18 13:47:19 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Starting Item Scan Test
+2025-03-18 13:47:19 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Barcode scanning function started
+2025-03-18 13:47:33 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering barcode: 0200024008604
+2025-03-18 13:47:39 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Submitting barcode...
+2025-03-18 13:47:41 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - click on basket 
+2025-03-18 13:47:49 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - clicking on basket button is success
+2025-03-18 13:48:00 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - clicking OK button on donation pop up test executed successfully
+2025-03-18 13:48:00 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - waiting for checkout button to appear
+2025-03-18 13:48:01 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - clicked on checkout button successfully
+2025-03-18 13:48:10 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - clicked on checkout2 button successfully
+2025-03-18 13:48:10 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - app navigated to payment screen
+2025-03-18 13:48:41 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Starting Payment Screen Test
+2025-03-18 13:48:41 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Waiting for payment screen to load...
+2025-03-18 13:48:52 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - waiting for payment screen to host
+2025-03-18 13:48:52 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - payment screen is hosted
+2025-03-18 13:48:52 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering email: Harshitha@mishipay.com
+2025-03-18 13:49:10 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering cardholder name: Test
+2025-03-18 13:49:14 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering card number: 4147 4630 1111 0133
+2025-03-18 13:49:17 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering expiry date: 12/28
+2025-03-18 13:49:19 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering CVV: 454
+2025-03-18 13:49:20 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Clicking pay button
+2025-03-18 13:49:24 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Resetting browser state
