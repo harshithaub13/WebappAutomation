@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Web shopper application test automation suite">
+    
+    <listeners>
+		<listener class-name="com.mishipay.webshopper.listeners.TestListener">
+			</listener>
+		
+	</listeners>
+    
+    
+    
+    <!-- Define a test configuration -->
+    <test name="Webapp Testcases">
+        
+        <!-- Set up parameters if needed -->
+        <parameter name="browser" value="chrome"/>
+        
+        <!-- Add your test classes here -->
+        <classes>
+            
+            <class name="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest"/>
+
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+</suite>
