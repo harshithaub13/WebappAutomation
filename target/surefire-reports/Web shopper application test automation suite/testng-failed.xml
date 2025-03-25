@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Web shopper application test automation suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.mishipay.webshopper.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Webapp Testcases(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest">
+        <methods>
+          <include name="verifyCheckoutButtonFunctionality"/>
+          <include name="verifyFTCStoreLogoIsDisplayed"/>
+          <include name="verifyFTCItemCanBeAddedToBasket"/>
+          <include name="verifyDonationPopupAppears"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyFTCPaymentScreenFunctionality"/>
+        </methods>
+      </class> <!-- com.mishipay.webshopper.testcases.FlyingTigerStorePageTest -->
+    </classes>
+  </test> <!-- Webapp Testcases(failed) -->
+</suite> <!-- Failed suite [Web shopper application test automation suite] -->

@@ -12,7 +12,7 @@ public class PaymentUtil {
 	public static Properties prop1;
 	
 		static {
-	        try (FileInputStream fis = new FileInputStream("/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/main/resources/payments.properties")) {
+	        try (FileInputStream fis = new FileInputStream("/Downloads/WebappAutomation/WebShopperAutomation/src/main/resources/payments.properties")) {
 	        	prop1 = new Properties();
 	        	prop1.load(fis);
 	        } catch (IOException e) {

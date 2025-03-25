@@ -8,15 +8,26 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Web shopper application test automation suite</th></tr>
-<tr><td><a href="#t0">Webapp Testcases</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">549,519</td><td></td><td></td></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">607,890</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Web shopper application test automation suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Webapp Testcases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.mishipay.webshopper.testcases.FlyingTigerStorePageTest</td><td><a href="#m0">verifyCheckoutButtonFunctionality</a></td><td rowspan="1">1741072940904</td><td rowspan="1">78981</td></tr><tr class="passedeven"><td><a href="#m1">verifyDonationPopupAppears</a></td><td rowspan="1">1741072866324</td><td rowspan="1">46999</td></tr><tr class="passedeven"><td><a href="#m2">verifyFTCStoreLogoIsDisplayed</a></td><td rowspan="1">1741072759131</td><td rowspan="1">12306</td></tr><tr class="passedeven"><td><a href="#m3">verifyItemCanBeAddedToBasket</a></td><td rowspan="1">1741072799969</td><td rowspan="1">33164</td></tr><tr class="passedeven"><td><a href="#m4">verifyPaymentScreenFunctionality</a></td><td rowspan="1">1741073107223</td><td rowspan="1">158157</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.mishipay.webshopper.testcases.DDFStorePageTest</td><td><a href="#m0">testBoardingPassUpload</a></td><td rowspan="1">1742897648238</td><td rowspan="1">182516</td></tr><tr class="failedeven"><td><a href="#m1">testClickUploadScreenshotButton</a></td><td rowspan="1">1742897830761</td><td rowspan="1">201138</td></tr><tr class="failedeven"><td><a href="#m2">testTransitPopup</a></td><td rowspan="1">1742898031901</td><td rowspan="1">201116</td></tr></tbody>
 </table>
-<h2>Webapp Testcases</h2><h3 id="m0">com.mishipay.webshopper.testcases.FlyingTigerStorePageTest#verifyCheckoutButtonFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93</td><td>FTC</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.mishipay.webshopper.testcases.FlyingTigerStorePageTest#verifyDonationPopupAppears</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93</td><td>FTC</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.mishipay.webshopper.testcases.FlyingTigerStorePageTest#verifyFTCStoreLogoIsDisplayed</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93</td><td>FTC</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.mishipay.webshopper.testcases.FlyingTigerStorePageTest#verifyItemCanBeAddedToBasket</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93</td><td>FTC</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.mishipay.webshopper.testcases.FlyingTigerStorePageTest#verifyPaymentScreenFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93</td><td>FTC</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">com.mishipay.webshopper.testcases.DDFStorePageTest#testBoardingPassUpload</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: [ERROR] Boarding pass upload validation failed. Please check the file format or system response.
+	at com.mishipay.webshopper.pages.DDFStorePage.uploadBoardingPass(DDFStorePage.java:75)
+	at com.mishipay.webshopper.testcases.DDFStorePageTest.testBoardingPassUpload(DDFStorePageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mishipay.webshopper.testcases.DDFStorePageTest#testClickUploadScreenshotButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: [ERROR] Boarding pass upload validation failed. Please check the file format or system response.
+	at com.mishipay.webshopper.pages.DDFStorePage.uploadBoardingPass(DDFStorePage.java:75)
+	at com.mishipay.webshopper.testcases.DDFStorePageTest.testClickUploadScreenshotButton(DDFStorePageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.mishipay.webshopper.testcases.DDFStorePageTest#testTransitPopup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: [ERROR] Boarding pass upload validation failed. Please check the file format or system response.
+	at com.mishipay.webshopper.pages.DDFStorePage.uploadBoardingPass(DDFStorePage.java:75)
+	at com.mishipay.webshopper.pages.DDFStorePage.uploadBoardingPassAndHandleTransit(DDFStorePage.java:38)
+	at com.mishipay.webshopper.testcases.DDFStorePageTest.testTransitPopup(DDFStorePageTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

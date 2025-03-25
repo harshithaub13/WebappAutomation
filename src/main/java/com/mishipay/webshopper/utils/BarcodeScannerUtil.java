@@ -1,7 +1,9 @@
 package com.mishipay.webshopper.utils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 public class BarcodeScannerUtil {
 
@@ -28,5 +30,11 @@ public class BarcodeScannerUtil {
         throw new RuntimeException("Scan function is not defined on the page.");
     }
   }
+
+    public static void injectBarcode(WebDriver driver, String barcodeFilePath) {
+        WebElement uploadElement = driver.findElement(By.id("boarding-pass-upload")); // Update locator
+        uploadElement.sendKeys(barcodeFilePath);
+    }
+
 }
     

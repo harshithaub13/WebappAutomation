@@ -8,9 +8,13 @@ import com.mishipay.webshopper.utils.TestUtil;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,15 +23,15 @@ public class TestBase {
 
 	public static WebDriver driver; // so that we can use driver in child class eg: storelocator class 
 	public static Properties prop;
-	
+    private WebDriverWait wait;
 	
 	//creating a constructor
 	public TestBase()
 	{
 		try {
 			prop = new Properties();
-				
-			FileInputStream fis = new FileInputStream("/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/main/resources/environments/config-test.properties");
+
+            FileInputStream fis = new FileInputStream("src/main/resources/environments/config-test.properties");
 					prop.load(fis);
 			        System.out.println("Loaded Properties: " + prop);
 
@@ -104,7 +108,24 @@ public class TestBase {
         public WebDriver getDriver() {
             return driver;
 
-    }	
+    }
+
+    // Helper methods
+    protected boolean isVisible(By locator) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)) != null;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    protected boolean isPresent(By locator) {
+        try {
+            return wait.until(ExpectedConditions.presenceOfElementLocated(locator)) != null;
+        } catch (Exception e) {
+            return false;
+        }
+    }
         
 }
 	   

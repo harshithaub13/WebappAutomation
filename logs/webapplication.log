@@ -19898,3 +19898,4 @@ Session ID: e708fe388077f4feeca8d70d8adb97b5
 2025-03-18 13:49:19 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Entering CVV: 454
 2025-03-18 13:49:20 [main] INFO  com.mishipay.webshopper.testcases.StorePageTest - Clicking pay button
 2025-03-18 13:49:24 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Resetting browser state
+2025-03-24 16:34:23 [main] INFO  com.mishipay.webshopper.testcases.FlyingTigerStorePageTest - Resetting browser state
