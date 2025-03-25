@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-04T12:48:55 IST" name="Web shopper application test automation suite" finished-at="2025-03-04T12:58:04 IST" duration-ms="549519">
+  <suite started-at="2025-03-24T17:33:59 IST" name="Web shopper application test automation suite" finished-at="2025-03-24T17:36:14 IST" duration-ms="135520">
     <groups>
     </groups>
-    <test started-at="2025-03-04T12:48:55 IST" name="Webapp Testcases" finished-at="2025-03-04T12:58:04 IST" duration-ms="549519">
+    <test started-at="2025-03-24T17:33:59 IST" name="Webapp Testcases" finished-at="2025-03-24T17:36:14 IST" duration-ms="135520">
       <class name="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:48:55 IST" name="setUp" finished-at="2025-03-04T12:49:19 IST" duration-ms="23920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@45c80312]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:33:59 IST" name="setUp" finished-at="2025-03-24T17:34:20 IST" duration-ms="21144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyFTCStoreLogoIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:49:19 IST" name="verifyFTCStoreLogoIsDisplayed" data-provider="FTCStoreData" finished-at="2025-03-04T12:49:31 IST" duration-ms="12306" status="PASS">
+        <test-method signature="verifyFTCStoreLogoIsDisplayed(java.lang.String,java.lang.String)[pri:1, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:34:20 IST" name="verifyFTCStoreLogoIsDisplayed" data-provider="FTCStoreData" finished-at="2025-03-24T17:34:34 IST" duration-ms="14532" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93]]>
+                <![CDATA[f98796d7-a492-44ae-83da-98dbc76f4a30]]>
               </value>
             </param>
             <param index="1">
@@ -34,26 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFTCStoreLogoIsDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:49:31 IST" name="tearDown" finished-at="2025-03-04T12:49:35 IST" duration-ms="4205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:49:35 IST" name="setUp" finished-at="2025-03-04T12:49:59 IST" duration-ms="24314" status="PASS">
+        <test-method signature="verifyFTCItemCanBeAddedToBasket(java.lang.String,java.lang.String)[pri:2, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:34:34 IST" name="verifyFTCItemCanBeAddedToBasket" data-provider="FTCStoreData" finished-at="2025-03-24T17:35:11 IST" depends-on-methods="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyFTCStoreLogoIsDisplayed" duration-ms="36910" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7bd38fed]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyItemCanBeAddedToBasket(java.lang.String,java.lang.String)[pri:2, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:49:59 IST" name="verifyItemCanBeAddedToBasket" data-provider="FTCStoreData" finished-at="2025-03-04T12:50:33 IST" duration-ms="33164" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93]]>
+                <![CDATA[f98796d7-a492-44ae-83da-98dbc76f4a30]]>
               </value>
             </param>
             <param index="1">
@@ -64,27 +42,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyItemCanBeAddedToBasket -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:50:33 IST" name="tearDown" finished-at="2025-03-04T12:50:42 IST" duration-ms="9647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:50:42 IST" name="setUp" finished-at="2025-03-04T12:51:06 IST" duration-ms="23534" status="PASS">
+        </test-method> <!-- verifyFTCItemCanBeAddedToBasket -->
+        <test-method signature="verifyDonationPopupAppears(java.lang.String,java.lang.String)[pri:3, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:35:11 IST" name="verifyDonationPopupAppears" data-provider="FTCStoreData" finished-at="2025-03-24T17:35:11 IST" depends-on-methods="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyFTCItemCanBeAddedToBasket" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@377dfb8d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyDonationPopupAppears(java.lang.String,java.lang.String)[pri:3, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:51:06 IST" name="verifyDonationPopupAppears" data-provider="FTCStoreData" finished-at="2025-03-04T12:51:53 IST" depends-on-methods="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyItemCanBeAddedToBasket" duration-ms="46999" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93]]>
+                <![CDATA[f98796d7-a492-44ae-83da-98dbc76f4a30]]>
               </value>
             </param>
             <param index="1">
@@ -93,29 +56,54 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping test: Donation pop-up is disabled in Production.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping test: Donation pop-up is disabled in Production.
+at com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyDonationPopupAppears(FlyingTigerStorePageTest.java:74)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDonationPopupAppears -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:51:53 IST" name="tearDown" finished-at="2025-03-04T12:51:56 IST" duration-ms="2911" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:51:56 IST" name="setUp" finished-at="2025-03-04T12:52:20 IST" duration-ms="24663" status="PASS">
+        <test-method signature="verifyCheckoutButtonFunctionality(java.lang.String,java.lang.String)[pri:4, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:35:11 IST" name="verifyCheckoutButtonFunctionality" data-provider="FTCStoreData" finished-at="2025-03-24T17:35:27 IST" duration-ms="15391" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@42a0786f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyCheckoutButtonFunctionality(java.lang.String,java.lang.String)[pri:4, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:52:20 IST" name="verifyCheckoutButtonFunctionality" data-provider="FTCStoreData" finished-at="2025-03-04T12:53:39 IST" depends-on-methods="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyDonationPopupAppears" duration-ms="78981" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93]]>
+                <![CDATA[f98796d7-a492-44ae-83da-98dbc76f4a30]]>
               </value>
             </param>
             <param index="1">
@@ -127,26 +115,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckoutButtonFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:53:39 IST" name="tearDown" finished-at="2025-03-04T12:54:45 IST" duration-ms="65884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:54:45 IST" name="setUp" finished-at="2025-03-04T12:55:07 IST" duration-ms="21448" status="PASS">
+        <test-method signature="verifyFTCPaymentScreenFunctionality(java.lang.String,java.lang.String)[pri:5, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:35:27 IST" name="verifyFTCPaymentScreenFunctionality" data-provider="FTCStoreData" finished-at="2025-03-24T17:35:27 IST" depends-on-methods="com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyCheckoutButtonFunctionality" duration-ms="2" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@477523ba]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyPaymentScreenFunctionality(java.lang.String,java.lang.String)[pri:5, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:55:07 IST" name="verifyPaymentScreenFunctionality" data-provider="FTCStoreData" finished-at="2025-03-04T12:57:45 IST" duration-ms="158157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[d7d29a35-0c3b-42df-b4bc-cd7eb52dfc93]]>
+                <![CDATA[f98796d7-a492-44ae-83da-98dbc76f4a30]]>
               </value>
             </param>
             <param index="1">
@@ -155,10 +128,50 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping payment tests in production.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping payment tests in production.
+at com.mishipay.webshopper.testcases.FlyingTigerStorePageTest.verifyFTCPaymentScreenFunctionality(FlyingTigerStorePageTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPaymentScreenFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@2e2ff723]" started-at="2025-03-04T12:57:45 IST" name="tearDown" finished-at="2025-03-04T12:58:04 IST" duration-ms="19318" status="PASS">
+        </test-method> <!-- verifyFTCPaymentScreenFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mishipay.webshopper.testcases.FlyingTigerStorePageTest@4b9df8a]" started-at="2025-03-24T17:35:27 IST" name="tearDown" finished-at="2025-03-24T17:36:14 IST" duration-ms="47478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

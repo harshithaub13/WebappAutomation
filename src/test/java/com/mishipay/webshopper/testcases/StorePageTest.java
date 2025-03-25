@@ -55,6 +55,7 @@ public class StorePageTest extends TestBase{
     	        log.info("click on basket ");
 
         		TestUtil.waitForPageToLoad(driver);
+                 Thread.sleep(4000);
 
         		storePage.basketOption();
 	          

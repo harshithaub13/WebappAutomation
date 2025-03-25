@@ -1,6 +1,7 @@
 package com.mishipay.webshopper.testcases;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -10,6 +11,7 @@ import com.mishipay.webshopper.base.TestBase;
 import com.mishipay.webshopper.pages.FlyingTigerStorePage;
 import com.mishipay.webshopper.utils.LoggerHelper;
 import com.mishipay.webshopper.utils.TestUtil;
+import com.mishipay.webshopper.config.EnvironmentConfig;
 
 public class FlyingTigerStorePageTest extends TestBase{
 
@@ -17,6 +19,7 @@ public class FlyingTigerStorePageTest extends TestBase{
 	     FlyingTigerStorePage ftcStorePage;
 	    private String storeId;
 	    private static final Logger log = LoggerHelper.getLogger(FlyingTigerStorePageTest.class);
+	     private boolean isProd = EnvironmentConfig.isProd();
 
 	    @DataProvider(name = "FTCStoreData")
 	    public Object[][] storeData() {
@@ -65,9 +68,13 @@ public class FlyingTigerStorePageTest extends TestBase{
 
 	    @Test(dataProvider = "FTCStoreData",priority = 3, dependsOnMethods = "verifyFTCItemCanBeAddedToBasket")
     	public void verifyDonationPopupAppears (String storeId,String storeName) throws InterruptedException
-    	{         		
-	    	//verifyFTCItemCanBeAddedToBasket(storeId, storeName);
-    		log.debug("Waiting for the page to load before scanning barcode...");           
+    	{
+			if (isProd) {
+				log.info("Skipping Donation Pop-up Test in Production.");
+				throw new SkipException("Skipping test: Donation pop-up is disabled in Production.");
+			}
+
+			log.debug("Waiting for the page to load before scanning barcode...");
        		//TestUtil.waitForPageToLoad(driver);
 	    	Thread.sleep(9000);	        
 
@@ -76,7 +83,7 @@ public class FlyingTigerStorePageTest extends TestBase{
 
     	}
 
-	    @Test(dataProvider = "FTCStoreData", priority = 4, dependsOnMethods = "verifyDonationPopupAppears" )
+	    @Test(dataProvider = "FTCStoreData", priority = 4 )
     	public void verifyCheckoutButtonFunctionality(String storeId, String storeName) throws InterruptedException {           
     		//verifyDonationPopupAppears(storeId, storeName);
     		 TestUtil.waitForPageToLoad(driver);
@@ -96,6 +103,11 @@ public class FlyingTigerStorePageTest extends TestBase{
 
 	    @Test(dataProvider = "FTCStoreData", priority = 5, dependsOnMethods = "verifyCheckoutButtonFunctionality")
 	    public void verifyFTCPaymentScreenFunctionality(String storeId, String storeName) throws InterruptedException {
+			//remove this if it's not working
+			if (isProd) {
+				log.info("Skipping payment screen validation in production.");
+				throw new SkipException("Skipping payment tests in production.");
+			} // until here
    		    TestUtil.waitForPageToLoad(driver);
 	        log.info("Starting Payment Screen Test");
 	        storePageTest.verifyPaymentScreenFunctionality(storeId, storeName); // Call common function

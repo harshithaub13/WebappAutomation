@@ -22,7 +22,7 @@ public class TestBase {
 	
 	
 	//creating a constructor
-	public TestBase()
+	/*public TestBase()
 	{
 		try {
 			prop = new Properties();
@@ -38,8 +38,23 @@ public class TestBase {
 		catch(IOException e) {
 			e.printStackTrace();
 		}
-	}
-	
+	}*/
+    public TestBase()
+    {
+        try {
+            prop = new Properties();
+            String env = System.getProperty("environment", "test"); // Default to test if not specified
+            String configFilePath = "/Users/harshitha/Documents/WebShopperAutomation/src/main/resources/environments/config-" + env + ".properties";
+            FileInputStream fis = new FileInputStream(configFilePath);
+            prop.load(fis);
+            System.out.println("Loaded Properties for Environment: " + env);
+          } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+        e.printStackTrace();
+
+       }
+    }
 	
 	public static void initialisation(String storeId)
 	{

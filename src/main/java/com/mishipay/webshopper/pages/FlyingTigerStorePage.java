@@ -77,7 +77,7 @@ public class FlyingTigerStorePage extends TestBase {
 	    
 	    
 	    
-	    public boolean isdonationPopUpDisplayed() {
+	    public boolean isDonationPopUpDisplayed() {
 	    	
 	    	wait.until(ExpectedConditions.visibilityOf(donationPopUpDailogue));
 	    	return donationPopUpDailogue.isDisplayed();

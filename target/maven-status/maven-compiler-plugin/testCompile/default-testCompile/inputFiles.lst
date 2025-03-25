@@ -1,9 +1,6 @@
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/TestBrowser.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/TestDDF.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/DDFStorePageTest.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/FTCTestClass.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/FlyingTigerStorePageTest.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/MapViewPageTest.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/StoreListingPageTest.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/StoreLocatorPageTest.java
-/Users/harshitha/Desktop/WebappAutomation/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/TestDataDriven.java
+/Users/harshitha/Documents/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/DDFStorePageTest.java
+/Users/harshitha/Documents/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/FlyingTigerStorePageTest.java
+/Users/harshitha/Documents/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/MapViewPageTest.java
+/Users/harshitha/Documents/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/StoreListingPageTest.java
+/Users/harshitha/Documents/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/StoreLocatorPageTest.java
+/Users/harshitha/Documents/WebShopperAutomation/src/test/java/com/mishipay/webshopper/testcases/StorePageTest.java
